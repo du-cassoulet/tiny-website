@@ -55,7 +55,7 @@ export default async function Navbar({ bot }: { bot: BotData }) {
 					className={style.loginButton}
 				>
 					<BsDiscord className={style.loginButton__icon} />
-					<p>Sign in with Discord</p>
+					<p className={style.loginButton__text}>Sign in</p>
 				</a>
 			)}
 		</nav>

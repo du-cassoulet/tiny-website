@@ -65,11 +65,16 @@
 		margin-inline: 20px;
 
 		@media screen and (max-width: $mobileWidth) {
-			padding-inline: 0;
+			margin-inline: 0;
+			padding: 10px;
 		}
 
 		&__icon {
 			font-size: 18px;
+
+			@media screen and (max-width: $mobileWidth) {
+				display: none;
+			}
 		}
 
 		&:hover {
