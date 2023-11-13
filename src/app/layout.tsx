@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import "./globals.scss";
 import Footer from "./components/Footer";
 import { getBotData } from "@/utils/getBotData";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -51,6 +52,7 @@ export default async function RootLayout({
 				<main>
 					{children}
 					<Footer />
+					<Analytics />
 				</main>
 			</body>
 		</html>
