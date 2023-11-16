@@ -33,6 +33,7 @@ export default async function MainProfile({ user }: { user: UserProfile }) {
 				src={`/backgrounds/${user.backgroundImage}`}
 				fallback="/backgrounds/blue_sky.png"
 				alt="User banner"
+				size={1024}
 				className={style.banner}
 			/>
 			<Avatar user={user} size={512} className={style.avatar} />
