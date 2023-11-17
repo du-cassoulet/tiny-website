@@ -13,7 +13,7 @@ export default async function MainProfile({ user }: { user: UserProfile }) {
 
 	if (accessToken) {
 		const res = await fetch(
-			`http://129.151.234.121:8080/api/users/@me/compare/${user.id}`,
+			`http://129.151.234.121:8081/api/users/@me/compare/${user.id}`,
 			{
 				headers: {
 					Authorization: `Bearer ${accessToken.value}`,
