@@ -16,7 +16,7 @@ export default async function Navbar({ bot }: { bot: BotData }) {
 	let user: User | null = null;
 
 	if (accessToken) {
-		const res = await fetch("http://129.151.234.121:8081/api/users/@me", {
+		const res = await fetch("http://129.151.234.121:8080/api/users/@me", {
 			headers: {
 				Authorization: `Bearer ${accessToken.value}`,
 			},
